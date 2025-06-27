@@ -1,0 +1,53 @@
+Invoke-RpcCall -Method "requestTokens" -Params @("player1", "MTOSHI")
+
+Invoke-RpcCall -Method "requestTokens" -Params @("player2", "MTOSHI")
+
+Invoke-RpcCall -Method "requestTokens" -Params @("player1", "Solutio")
+
+Invoke-RpcCall -Method "getBalance" -Params @("player1", "MTOSHI")
+
+Invoke-RpcCall -Method "getPlayer" -Params @("player1")
+
+Invoke-RpcCall -Method "getContentStats" -Params @("player1")
+
+Invoke-RpcCall -Method "simulateActivity" -Params @()
+
+Invoke-RpcCall -Method "mineBlock" -Params @("player1", 1)
+
+Invoke-RpcCall -Method "recordActivity" -Params @("player1", 4)
+
+Invoke-RpcCall -Method "battle" -Params @("player1", "player2")
+
+Invoke-RpcCall -Method "mintNft" -Params @("player1", "Gem1", 100)
+
+Invoke-RpcCall -Method "mintNft" -Params @("player2", "Gem2", 100)
+
+Invoke-RpcCall -Method "tradeItems" -Params @("player1", 0, "player2", 0)
+
+Invoke-RpcCall -Method "distributeMtoshiRewards" -Params @()
+
+Invoke-RpcCall -Method "showLeaderboard" -Params @()
+
+Invoke-RpcCall -Method "getMtoshiBalance" -Params @("player1")
+
+Invoke-RpcCall -Method "mintNft" -Params @("player1", "UniqueGem", 100)
+
+Invoke-RpcCall -Method "sellNft" -Params @("player1", 0, 50)
+
+Invoke-RpcCall -Method "buyNft" -Params @("player2", "player1", 0)
+
+Invoke-RpcCall -Method "uploadContent" -Params @("player1", "video1", "My Video")
+
+Invoke-RpcCall -Method "likeContent" -Params @("player2", "video1")
+
+Invoke-RpcCall -Method "commentContent" -Params @("player2", "video1", "Great video!")
+
+Invoke-RpcCall -Method "viewContent" -Params @("player2", "video1")
+
+Invoke-RpcCall -Method "postContent" -Params @("player1", "post1", "My first post")
+
+Invoke-RpcCall -Method "likePost" -Params @("player2", "post1", $true)
+
+Invoke-RpcCall -Method "commentPost" -Params @("player2", "post1", "Nice post!")
+
+Invoke-RpcCall -Method "boostPost" -Params @("player1", "post1", 1)
